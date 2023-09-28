@@ -1,0 +1,18 @@
+rootProject.name = 'gradle-with-version-catalog'
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+//            version('groovy', '3.0.5')
+//            version('checkstyle', '8.37')
+            library('groovy-core', 'org.codehaus.groovy:groovy:3.0.5')
+            library('groovy_json', 'org.codehaus.groovy:groovy-json:3.0.5')
+            library('groovy', 'org.codehaus.groovy:groovy-nio:3.0.5')
+//            library('commons-lang3', 'org.apache.commons', 'commons-lang3').version {
+//                strictly '[3.8, 4.0['
+//                prefer '3.9'
+//            }
+        }
+    }
+}
+
+
